@@ -112,6 +112,7 @@ stages:
 ## Step-3: Terraform Plan 
 ## Step-4: Terraform Apply
       - deployment: DeployQAAKSCluster
+        dependsOn: DeployDevAKSCluster
         displayName: Deploy QA AKS Cluster
         pool:
           vmImage: 'ubuntu-latest'
